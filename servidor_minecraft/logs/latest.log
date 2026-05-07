@@ -1,0 +1,1120 @@
+[20:10:09] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-1044-azure (amd64)
+[20:10:09] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-131-ver/1.21.11@6d5b910 (2026-05-03T16:08:07Z) for Minecraft 1.21.11
+[20:10:09] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[20:10:13] [ServerMain/INFO]: [PluginInitializerManager] Initialized 23 plugins
+[20:10:13] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (2):
+ - CustomDiscs (2.5.2), HuskHomes (4.10-089d883)
+[20:10:13] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (21):
+ - BreweryX (3.6.5;HEAD), CarryOn (1.0-SNAPSHOT), Chunky (1.4.40), CommandAPI (11.2.0), GrimAC (2.3.74-65815fc), InvSeePlusPlus (0.31.10), LuckPerms (5.5.42), PlaceholderAPI (2.12.2), ProtocolLib (5.4.0), PterodactylAntiCrash (1.0), SkinsRestorer (15.12.0), TAB (6.0.2), ViaBackwards (5.9.1), ViaVersion (5.9.1), WorldEdit (7.4.2+7450-eb8e82c), WorldGuard (7.0.15+2347-5fafea6), mclogs (3.2.0), nAntiBot (2.0.6), nLogin (2.0.16), nonchat (1.5.9), packetevents (2.12.1)
+[20:10:19] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[20:10:24] [Worker-Main-1/WARN]: Found loot table element validation problem in {infinity_cave:custom_items/frostpale_plant@minecraft:loot_table}.pools[0].entries[0]: Unreachable entry!
+[20:10:24] [Worker-Main-1/WARN]: Found loot table element validation problem in {minecraft:blocks/pitcher_crop@minecraft:loot_table}.pools[1].entries[0]->{infinity_cave:custom_items/frostpale_plant@minecraft:loot_table}.pools[0].entries[0]: Unreachable entry!
+[20:10:26] [ServerMain/INFO]: Loaded 1479 recipes
+[20:10:26] [ServerMain/INFO]: Loaded 1913 advancements
+[20:10:26] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[20:10:27] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 342.6ms
+[20:10:27] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[20:10:27] [Server thread/INFO]: Loading properties
+[20:10:27] [Server thread/INFO]: This server is running Paper version 1.21.11-131-ver/1.21.11@6d5b910 (2026-05-03T16:08:07Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[20:10:27] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[20:10:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:10:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:10:27] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[20:10:28] [Server thread/INFO]: Default game type: SURVIVAL
+[20:10:28] [Server thread/INFO]: Generating keypair
+[20:10:28] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:10:28] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:10:28] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[20:10:28] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/CustomDiscs-2.5.2.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [voicechat]. Please download and install these plugins to run 'CustomDiscs'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:320) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1253) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[20:10:29] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'mclogs-bukkit-26.1-3.2.0-all.jar' in folder 'plugins/.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 26.1
+	at org.bukkit.craftbukkit.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:370) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:121) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:320) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1253) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[20:10:29] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.9.1
+[20:10:29] [Server thread/INFO]: [ViaVersion] ViaVersion 5.9.1 is now loaded. Registering protocol transformers and injecting...
+[20:10:30] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[20:10:30] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[20:10:30] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[20:10:31] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.2+7450-eb8e82c
+[20:10:32] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5dfbf4d2]
+[20:10:32] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[20:10:32] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.11) has not yet been tested! Proceed with caution.
+[20:10:32] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.2
+[20:10:32] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.9.1
+[20:10:32] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.42
+[20:10:33] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[20:10:33] [Server thread/INFO]: [CommandAPI] Loading server plugin CommandAPI v11.2.0
+[20:10:33] [Server thread/INFO]: [CommandAPI] Loaded version PaperNMS_1_21_R7
+[20:10:33] [Server thread/INFO]: [CommandAPI] Hooked into Spigot successfully for Chat/ChatComponents
+[20:10:33] [Server thread/INFO]: [CommandAPI] Hooked into Adventure for AdventureChat/AdventureChatComponents
+[20:10:33] [Server thread/INFO]: [CommandAPI] Hooked into Paper for paper-specific API implementations
+[20:10:33] [Server thread/INFO]: [CommandAPI] Loaded platform CommandAPIPaper > CommandAPIBukkit
+[20:10:33] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.15+2347-5fafea6
+[20:10:33] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.12.0
+[20:10:33] [Server thread/INFO]: [TAB] Loading server plugin TAB v6.0.2
+[20:10:33] [Server thread/INFO]: [HuskHomes] Loading server plugin HuskHomes v4.10-089d883
+[20:10:33] [Server thread/INFO]: [HuskHomes] Registered 'on_load' hooks
+[20:10:33] [Server thread/INFO]: [HuskHomes] Successfully loaded HuskHomes v4.10-089d883
+[20:10:33] [Server thread/INFO]: [CarryOn] Loading server plugin CarryOn v1.0-SNAPSHOT
+[20:10:33] [Server thread/INFO]: [PAC] Loading server plugin PterodactylAntiCrash v1.0
+[20:10:33] [Server thread/INFO]: [nAntiBot] Loading server plugin nAntiBot v2.0.6
+[20:10:35] [Server thread/INFO]: [BreweryX] Loading server plugin BreweryX v3.6.5;HEAD
+[20:10:35] [Server thread/INFO]: [GrimAC] Loading server plugin GrimAC v2.3.74-65815fc
+[20:10:35] [Server thread/INFO]: [GrimAC] Loading PacketEvents...
+[20:10:38] [Server thread/INFO]: [InvSee++] Loading server plugin InvSeePlusPlus v0.31.10
+[20:10:38] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+[20:10:38] [Server thread/INFO]: [nLogin] Loading server plugin nLogin v2.0.16
+[20:10:40] [Server thread/INFO]: [nonchat] Loading server plugin nonchat v1.5.9
+[20:10:40] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.12.1
+[20:10:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:10:41] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.2+7450-eb8e82c
+[20:10:41] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[20:10:41] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[20:10:42] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
+[20:10:42] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[20:10:42] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.42
+[20:10:42] [Server thread/INFO]:         __    
+[20:10:42] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.42
+[20:10:42] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[20:10:42] [Server thread/INFO]: 
+[20:10:42] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[20:10:43] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[20:10:43] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[20:10:43] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1365ms)
+[20:10:43] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.12.0
+[20:10:44] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.11.
+[20:10:45] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[20:10:45] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.12.0]
+[20:10:45] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[20:10:45] [Server thread/INFO]: [nAntiBot] Enabling nAntiBot v2.0.6
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.12.0
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 2903414
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[20:10:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer or receive priority support? Become a supporter: https://skinsrestorer.net/pricing
+[20:10:45] [Server thread/INFO]: [nAntiBot] Successful plugin core start (took 0.17s)
+[20:10:45] [Server thread/INFO]: [nAntiBot]           _         _   _   ___       _   
+[20:10:45] [Server thread/INFO]: [nAntiBot]   _ __   /_\  _ __ | |_(_) / __\ ___ | |_ 
+[20:10:45] [Server thread/INFO]: [nAntiBot]  | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|
+[20:10:45] [Server thread/INFO]: [nAntiBot]  | | | /  _  \ | | | |_| / \/  \ (_) | |_ 
+[20:10:45] [Server thread/INFO]: [nAntiBot]  |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|
+[20:10:45] [Server thread/INFO]: [nAntiBot]                                          
+[20:10:45] [Server thread/INFO]: [nAntiBot]  By: www.nickuc.com - V 2.0.6
+[20:10:45] [Server thread/INFO]: [nAntiBot] 
+[20:10:47] [Folia Async Scheduler Thread #2/INFO]: [nAntiBot] Connecting to the remote server antibot.nickuc.com...
+[20:10:47] [Server thread/INFO]: [nLogin] Enabling nLogin v2.0.16
+[20:10:47] [Server thread/INFO]: [nLogin] Successful plugin core start (took 0.16s)
+[20:10:47] [Server thread/INFO]: [nLogin]           __             _       
+[20:10:47] [Server thread/INFO]: [nLogin]   _ __   / /  ___   __ _(_)_ __  
+[20:10:47] [Server thread/INFO]: [nLogin]  | '_ \ / /  / _ \ / _` | | '_ \ 
+[20:10:47] [Server thread/INFO]: [nLogin]  | | | / /__| (_) | (_| | | | | |
+[20:10:47] [Server thread/INFO]: [nLogin]  |_| |_\____/\___/ \__, |_|_| |_|
+[20:10:47] [Server thread/INFO]: [nLogin]                   |___/            
+[20:10:47] [Server thread/INFO]: [nLogin]  By: www.nickuc.com - V 2.0.16
+[20:10:47] [Server thread/INFO]: [nLogin]  
+[20:10:47] [Server thread/WARN]: [nLogin] The "unsupported-settings.perform-username-validation" option is enabled in config/paper-global.yml
+[20:10:47] [Server thread/WARN]: [nLogin] The username-appender feature may fail with an invalid nickname kick message.
+[20:10:49] [Server thread/INFO]: [nonchat] Enabling nonchat v1.5.9
+[20:10:49] [Server thread/INFO]: [nonchat] Configuration reloaded successfully
+[20:10:49] [Server thread/INFO]: [nonchat] Built-in interactive placeholders will be loaded from config
+[20:10:49] [Server thread/INFO]: [nonchat] Loaded 2 custom interactive placeholders from config
+[20:10:49] [Server thread/INFO]: [nonchat] Interactive placeholders initialized successfully
+[20:10:49] [Server thread/INFO]: [nonchat] Deaths.yml is up to date, no changes needed
+[20:10:49] [Server thread/INFO]: [nonchat] Death messages configuration loaded successfully
+[20:10:49] [Server thread/INFO]: [nonchat] Death message service initialized successfully
+[20:10:49] [Server thread/INFO]: [nonchat] Indirect death tracking enabled (window: 10s)
+[20:10:49] [Server thread/INFO]: [nonchat] Core services initialized successfully
+[20:10:49] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: nonchat [1.5.9]
+[20:10:49] [Server thread/INFO]: [nonchat] PlaceholderAPI expansion registered successfully
+[20:10:49] [Server thread/INFO]: [nonchat] Indirect death tracking enabled (window: 10s, min damage: 1.0 hearts)
+[20:10:49] [Server thread/INFO]: [nonchat] Event listeners registered successfully
+[20:10:49] [Server thread/INFO]: [nonchat] LuckPerms integration enabled
+[20:10:49] [Server thread/INFO]: [nonchat] Vault not installed - economy features will be disabled
+[20:10:49] [Server thread/INFO]: [nonchat] PlaceholderAPI integration enabled
+[20:10:49] [Server thread/INFO]: [nonchat] Metrics initialized successfully
+[20:10:49] [Server thread/INFO]: [nonchat] DiscordSRV not available - Discord integration will be disabled
+[20:10:49] [Server thread/INFO]: [nonchat] Initializing update checker...
+[20:10:49] [Server thread/INFO]: [nonchat] Update checker initialized successfully
+[20:10:49] [Server thread/INFO]: [nonchat] plugin enabled
+[20:10:49] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:10:49] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:10:49] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:10:49] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:10:49] [Server thread/INFO]: Preparing level "world"
+[20:10:50] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] NUMA enable flag is not set; however there is NUMA interaction support for this OS.
+[20:10:50] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] Detected 1 NUMA nodes.
+[20:10:51] [Server thread/INFO]: Loading 25 persistent chunks for world 'minecraft:overworld'...
+[20:10:51] [Server thread/INFO]: Preparing spawn area: 28%
+[20:10:52] [Server thread/INFO]: Preparing spawn area: 57%
+[20:10:52] [Server thread/INFO]: Preparing spawn area: 85%
+[20:10:52] [Server thread/INFO]: Prepared spawn area in 1208 ms
+[20:10:52] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[20:10:52] [Server thread/INFO]: Prepared spawn area in 1 ms
+[20:10:52] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[20:10:52] [Server thread/INFO]: Prepared spawn area in 0 ms
+[20:10:52] [Server thread/INFO]: Done preparing level "world" (2.763s)
+[20:10:52] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.9.1
+[20:10:52] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.11 (774)
+[20:10:52] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.2
+[20:10:52] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:10:52] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.9.1
+[20:10:52] [Server thread/INFO]: [CommandAPI] Enabling CommandAPI v11.2.0
+[20:10:52] [Server thread/INFO]: [CommandAPI] Hooked into Paper ServerResourcesReloadedEvent
+[20:10:52] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.15+2347-5fafea6
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[20:10:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[20:10:53] [Server thread/INFO]: [WorldGuard] Loading region data...
+[20:10:53] [Server thread/INFO]: [TAB] Enabling TAB v6.0.2
+[20:10:53] [Server thread/INFO]: [TAB] Found NMS implementation: me.neznamy.tab.platforms.bukkit.paper_1_21_11.NMSImplementationProvider
+[20:10:53] [Server thread/INFO]: [TAB] Enabled in 220ms
+[20:10:53] [Server thread/INFO]: [HuskHomes] Enabling HuskHomes v4.10-089d883
+[20:10:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: huskhomes [4.10]
+[20:10:53] [Server thread/INFO]: [HuskHomes] Registered 'on_enable' hooks
+[20:10:53] [Server thread/INFO]: [HuskHomes] Successfully enabled HuskHomes v4.10-089d883
+[20:10:54] [Server thread/INFO]: [CarryOn] Enabling CarryOn v1.0-SNAPSHOT
+[20:10:54] [Server thread/INFO]: [CarryOn] CarryOn enabled!
+[20:10:54] [Server thread/INFO]: [PAC] Enabling PterodactylAntiCrash v1.0
+[20:10:54] [Server thread/WARN]: [PAC] The API URL has not yet been set, no connection to Pterodactyl can be established.
+[20:10:54] [Server thread/INFO]: [BreweryX] Enabling BreweryX v3.6.5;HEAD
+[20:10:54] [Server thread/INFO]: [BreweryX] Using language: en.yml
+[20:10:54] [Server thread/INFO]: [BreweryX] Minecraft version: 1.21.11
+[20:10:55] [Server thread/INFO]: [BreweryX] DataManager created: SQLite
+[20:10:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: breweryx [3.6.5;HEAD]
+[20:10:55] [Server thread/INFO]: [BreweryX] Using scheduler: PaperScheduler
+[20:10:55] [Server thread/INFO]: [BreweryX] Environment: Paper
+[20:10:55] [Server thread/INFO]: [BreweryX] BreweryX enabled!
+[20:10:55] [Server thread/INFO]: [GrimAC] Enabling GrimAC v2.3.74-65815fc
+[20:10:55] [Server thread/INFO]: [GrimAC] Registering packets...
+[20:10:55] [Server thread/INFO]: [GrimAC] Registering tick schedulers...
+[20:10:55] [Server thread/INFO]: Grim Version: 2.3.74-65815fc
+[20:10:55] [Server thread/WARN]: [GrimAC] GrimAC has detected that you have installed ViaBackwards on a 1.21.2+ server.
+[20:10:55] [Server thread/WARN]: [GrimAC] This setup is currently unsupported and you will experience issues with older clients using vehicles.
+[20:10:55] [Server thread/INFO]: [GrimAC] Registering singular bukkit event... (PistonEvent)
+[20:10:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: grim [2.3.74-65815fc]
+[20:10:55] [Server thread/INFO]: [InvSee++] Enabling InvSeePlusPlus v0.31.10
+[20:10:55] [Server thread/INFO]: [InvSee++] Detected server software: Paper version 1.21.11
+[20:10:56] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
+[20:10:56] [Server thread/INFO]: [packetevents] Enabling packetevents v2.12.1
+[20:10:56] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[20:10:56] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.12.1)
+[20:10:56] [Server thread/INFO]: [spark] Starting background profiler...
+[20:10:57] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[20:10:57] [Server thread/INFO]: Running delayed init tasks
+[20:10:57] [Server thread/INFO]: Done (48.706s)! For help, type "help"
+[20:10:57] [Craft Scheduler Thread - 4 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:10:57] [Craft Scheduler Thread - 7 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[20:10:57] [Craft Scheduler Thread - 4 - GrimAC/INFO]: You are using the latest version of GrimAC
+[20:10:57] [Paper Async Task Handler Thread - 1/WARN]: *************************************************************************************
+[20:10:57] [Paper Async Task Handler Thread - 1/WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[20:10:57] [Paper Async Task Handler Thread - 1/WARN]: However, you are 2 release(s) behind the latest stable release (26.1.2)!
+[20:10:57] [Paper Async Task Handler Thread - 1/WARN]: It is recommended that you update as soon as possible
+[20:10:57] [Paper Async Task Handler Thread - 1/WARN]: https://papermc.io/downloads/paper
+[20:10:57] [Paper Async Task Handler Thread - 1/WARN]: *************************************************************************************
+[20:10:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[20:10:57] [Server thread/INFO]: [PlaceholderAPI] [Config Expansion] Loading the configs ...
+[20:10:57] [Server thread/ERROR]: [PlaceholderAPI] Failed to load expansion class ConfigExpansion - One of its properties is null which is not allowed!
+java.lang.NullPointerException: Cannot invoke "org.bukkit.configuration.ConfigurationSection.getKeys(boolean)" because the return value of "me.gabytm.placeholderapi.config.ConfigExpansion.getConfigSection(String)" is null
+	at me.gabytm.placeholderapi.config.ConfigExpansion.register(ConfigExpansion.java:56) ~[?:?]
+	at PlaceholderAPI-2.12.2.jar//me.clip.placeholderapi.expansion.manager.LocalExpansionManager.register(LocalExpansionManager.java:195) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at PlaceholderAPI-2.12.2.jar//me.clip.placeholderapi.expansion.manager.LocalExpansionManager.lambda$registerAll$4(LocalExpansionManager.java:369) ~[?:?]
+	at PlaceholderAPI-2.12.2.jar//me.clip.placeholderapi.util.Futures.lambda$onMainThread$0(Futures.java:48) ~[?:?]
+	at PlaceholderAPI-2.12.2.jar//me.clip.placeholderapi.scheduler.folia.FoliaScheduler.lambda$runTask$0(FoliaScheduler.java:72) ~[?:?]
+	at io.papermc.paper.threadedregions.scheduler.FoliaGlobalRegionScheduler$GlobalScheduledTask.run(FoliaGlobalRegionScheduler.java:178) ~[paper-1.21.11.jar:?]
+	at io.papermc.paper.threadedregions.scheduler.FoliaGlobalRegionScheduler.tick(FoliaGlobalRegionScheduler.java:36) ~[paper-1.21.11.jar:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1758) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1611) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:427) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1667) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1335) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-131-6d5b910]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[20:10:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[20:10:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
+[20:10:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: servertime [3.2]
+[20:10:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[20:10:57] [Server thread/INFO]: 5 placeholder hook(s) registered!
+[20:11:02] [Craft Scheduler Thread - 6 - HuskHomes/INFO]: [HuskHomes] Registered 'after_load' hooks
+[20:11:02] [pool-23-thread-1/INFO]: [nAntiBot] [Captcha] Captchas generated successfully. (RAM usage ≃ 8 MB [static only], total = 500, protocol count = 51, threads = 4, took 16.75s)
+[20:11:07] [User Authenticator #0/INFO]: UUID of player Ivo is a5a2e13a-b569-3fa7-9b5a-b3320e4dc96b
+[20:11:07] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, BreweryX, ProtocolLib, WorldGuard]
+[20:11:08] [Netty Epoll IO #3/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_21_9/20...
+[20:11:09] [Netty Epoll IO #3/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_21_9/20 in 291.890073ms
+[20:11:09] [Netty Epoll IO #3/INFO]: [com.nickuc.login.lib.packetevents.api.PacketEventsAPI] Loading block mappings for V_1_21_9/20...
+[20:11:09] [Netty Epoll IO #3/INFO]: [com.nickuc.login.lib.packetevents.api.PacketEventsAPI] Finished loading block mappings for V_1_21_9/20 in 339.352152ms
+[20:11:09] [Netty Epoll IO #3/INFO]: [ac.grim.grimac.shaded.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_21_9/20...
+[20:11:10] [Netty Epoll IO #3/INFO]: [ac.grim.grimac.shaded.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_21_9/20 in 482.486545ms
+[20:11:16] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: 5fa373fe-a338-4928-970a-b694a462f70f, mapped to Bat['Bat'/39, uuid='5fa373fe-a338-4928-970a-b694a462f70f', l='ServerLevel[world]', x=-789.47, y=66.15, z=-63.37, cpos=[-50, -4], tl=0, v=true], can't add Bat['Bat'/51, uuid='5fa373fe-a338-4928-970a-b694a462f70f', l='ServerLevel[world]', x=-782.93, y=64.93, z=-66.07, cpos=[-49, -5], tl=0, v=false]
+[20:11:16] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: 522785c3-ccd8-4dbc-b371-4e35ebbf6f40, mapped to Bat['Bat'/55, uuid='522785c3-ccd8-4dbc-b371-4e35ebbf6f40', l='ServerLevel[world]', x=-769.17, y=4.21, z=-7.03, cpos=[-49, -1], tl=0, v=true], can't add Bat['Bat'/73, uuid='522785c3-ccd8-4dbc-b371-4e35ebbf6f40', l='ServerLevel[world]', x=-761.67, y=-1.00, z=-10.86, cpos=[-48, -1], tl=0, v=false]
+[20:11:16] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: d05dc27a-71c0-4734-b57b-df8f10361a4e, mapped to Wolf['Wolf'/68, uuid='d05dc27a-71c0-4734-b57b-df8f10361a4e', l='ServerLevel[world]', x=-755.50, y=69.00, z=-29.20, cpos=[-48, -2], tl=0, v=true], can't add Wolf['Wolf'/79, uuid='d05dc27a-71c0-4734-b57b-df8f10361a4e', l='ServerLevel[world]', x=-751.68, y=68.94, z=-1.50, cpos=[-47, -1], tl=0, v=false]
+[20:11:18] [Server thread/INFO]: (+)  Ivo 
+[20:11:18] [Server thread/INFO]: Ivo[/127.28.237.50:36035] logged in with entity id 10 at ([world]-778.3011095450349, 45.0, -16.89612998836999)
+[20:11:18] [Folia Async Scheduler Thread #2/INFO]: [nLogin] The user Ivo has successfully logged in.
+[20:11:23] [User Authenticator #0/INFO]: UUID of player LApatata_culona is 665f86e6-8493-3529-b101-c958a7062665
+[20:11:26] [Server thread/INFO]: (+)  LApatata_culona 
+[20:11:26] [Server thread/INFO]: LApatata_culona[/127.160.130.120:51801] logged in with entity id 319 at ([world]-7.007736603153687, 72.0, 242.8475889066194)
+[20:11:33] [Server thread/INFO]: LApatata_culona issued server command: /login
+[20:11:33] [Folia Async Scheduler Thread #3/INFO]: [nLogin] The user LApatata_culona has successfully logged in.
+[20:12:45] [Server thread/INFO]: ⚔ Ivo was killed by Drowned
+[20:12:49] [ForkJoinPool.commonPool-worker-1/INFO]: (G)  Ivo : la ptm
+[20:12:50] [Server thread/INFO]: Ivo issued server command: /huskhomes:back
+[20:12:50] [ForkJoinPool.commonPool-worker-1/INFO]: (G)  LApatata_culona : jaja
+[20:12:56] [Netty Epoll IO #0/INFO]: [ac.grim.grimac.shaded.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_5/15...
+[20:12:56] [Netty Epoll IO #0/INFO]: [ac.grim.grimac.shaded.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_5/15 in 210.550062ms
+[20:14:56] [ForkJoinPool.commonPool-worker-4/INFO]: (G)  Ivo : como va la casa?
+[20:15:04] [ForkJoinPool.commonPool-worker-4/INFO]: (G)  LApatata_culona : estoy asiendo una casa porvisional
+[20:15:57] [Craft Scheduler Thread - 30 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:18:11] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : ayuda
+[20:18:15] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : que
+[20:18:23] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : me meti a una cueva toxica
+[20:18:32] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : XD
+[20:18:33] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : ta todo radioactivo
+[20:18:34] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : queee
+[20:18:37] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : enserio
+[20:18:40] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : si
+[20:18:46] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : me podria aser una casa
+[20:18:52] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : abajo de una cueba de esas
+[20:18:58] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : me enveneno no puedo pasar ahi
+[20:19:08] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : jaj que beuno
+[20:19:15] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : manda tp
+[20:19:24] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : vos manda
+[20:19:30] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : ni enpedo estoy
+[20:19:33] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : asendo mi casa
+[20:19:48] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : haces /home y ya esta
+[20:20:09] [Server thread/INFO]: LApatata_culona issued server command: /sethome
+[20:20:12] [Server thread/INFO]: LApatata_culona issued server command: /m Ivo
+[20:20:18] [Server thread/INFO]: LApatata_culona issued server command: /tpa Ivo
+[20:20:22] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:20:37] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : solo el agua
+[20:20:38] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : no bajes ahi
+[20:20:44] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : mm
+[20:20:45] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : espera
+[20:20:47] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : ya se
+[20:20:49] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : esque si bajas hay agua radioactiva
+[20:20:51] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : tenes hierro
+[20:20:56] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : si vez la puerta esta verde
+[20:20:57] [Craft Scheduler Thread - 46 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:21:03] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : ando cociendo todo
+[20:21:22] [Server thread/INFO]: Ivo has made the advancement [Suit Up]
+[20:21:33] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : noe sradiactiva
+[20:21:40] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : mira
+[20:21:49] [Server thread/INFO]: ⚔ LApatata_culona was killed by Ivo
+[20:21:57] [Server thread/INFO]: LApatata_culona issued server command: /huskhomes:back
+[20:22:01] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : bueh
+[20:22:06] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : estabas a medio cora
+[20:22:18] [Server thread/INFO]: 💧 LApatata_culona ran out of air
+[20:22:32] [Server thread/INFO]: LApatata_culona issued server command: /home
+[20:22:48] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : tenes
+[20:22:50] [Server thread/INFO]: LApatata_culona issued server command: /tpa Ivo
+[20:22:53] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : 1 de hierro
+[20:23:05] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : aca
+[20:23:07] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:23:29] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : uh
+[20:23:49] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : para eso son las puertas
+[20:23:50] [Server thread/INFO]: LApatata_culona issued server command: /home
+[20:24:02] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : no
+[20:24:05] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : no funsiona
+[20:24:23] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  Ivo : que abra abajo?
+[20:24:26] [Server thread/INFO]:  Ivo drowned
+[20:24:33] [Server thread/INFO]: Ivo issued server command: /huskhomes:back
+[20:24:36] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : nos e
+[20:24:45] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : si te aogas primero con el agua
+[20:24:51] [Server thread/INFO]: Ivo issued server command: /sethome radioactivo
+[20:25:01] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : asta quedar a medioc orason despues te deja dea fectar
+[20:25:07] [ForkJoinPool.commonPool-worker-6/INFO]: (G)  LApatata_culona : el veneno
+[20:25:58] [Craft Scheduler Thread - 66 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:26:24] [ForkJoinPool.commonPool-worker-7/INFO]: (G)  Ivo : sulfidecaves dice
+[20:26:31] [ForkJoinPool.commonPool-worker-7/INFO]: (G)  LApatata_culona : que
+[20:26:36] [ForkJoinPool.commonPool-worker-7/INFO]: (G)  Ivo : ese es el bioma
+[20:26:40] [ForkJoinPool.commonPool-worker-7/INFO]: (G)  LApatata_culona : XD
+[20:27:48] [Server thread/INFO]: Nothing changed. The player already is an operator
+[20:28:02] [Server thread/INFO]: Made Ivo a server operator
+[20:28:05] [Server thread/INFO]: [Ivo: Set own game mode to Spectator Mode]
+[20:28:11] [Server thread/INFO]: Ivo has made the advancement [Infinity Cave]
+[20:28:16] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : uy
+[20:28:28] [Server thread/INFO]: [Ivo: Set own game mode to Survival Mode]
+[20:28:29] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : que
+[20:29:19] [Server thread/INFO]: ⬛ Ivo couldn't breathe in the wall
+[20:29:24] [Server thread/INFO]: Ivo issued server command: /huskhomes:back
+[20:29:26] [ForkJoinPool.commonPool-worker-9/INFO]: (G)  Ivo : que mier
+[20:29:36] [ForkJoinPool.commonPool-worker-9/INFO]: (G)  Ivo : mis cosas se quemaron
+[20:29:37] [ForkJoinPool.commonPool-worker-9/INFO]: (G)  LApatata_culona : que paso
+[20:29:37] [Server thread/INFO]: [Ivo: Set own game mode to Spectator Mode]
+[20:29:39] [ForkJoinPool.commonPool-worker-9/INFO]: (G)  LApatata_culona : JAJA
+[20:29:42] [ForkJoinPool.commonPool-worker-9/INFO]: (G)  Ivo : el acido quema tus cosas
+[20:29:54] [Server thread/INFO]: [Ivo: Set own game mode to Creative Mode]
+[20:30:48] [Server thread/INFO]: [Ivo: Set own game mode to Survival Mode]
+[20:30:58] [Craft Scheduler Thread - 87 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:31:00] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : almenos tengo el pico y un poco de madera
+[20:31:10] [Server thread/INFO]: [Ivo: Set own game mode to Spectator Mode]
+[20:31:20] [Server thread/INFO]: [Ivo: Set own game mode to Survival Mode]
+[20:31:25] [Server thread/INFO]: Ivo has made the advancement [Diamonds!]
+[20:31:49] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : eu
+[20:31:54] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : que
+[20:32:14] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : encontre algo
+[20:32:20] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : que cosa
+[20:32:24] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : flores
+[20:32:29] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : flores
+[20:32:31] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : si
+[20:32:33] [Server thread/INFO]: [Ivo: Set own game mode to Spectator Mode]
+[20:32:33] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : en uan cueva
+[20:32:35] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : ???dw
+[20:32:36] [Server thread/INFO]: [Ivo: Set own game mode to Survival Mode]
+[20:32:38] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : si
+[20:32:46] [Server thread/INFO]: LApatata_culona issued server command: /m Ivo
+[20:32:49] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : perdi el libro
+[20:32:50] [Server thread/INFO]: LApatata_culona issued server command: /tpa Ivo
+[20:33:32] [Server thread/INFO]: Ivo issued server command: /function infinity_cave:abilities/generic/dash
+[20:33:32] [Server thread/INFO]: [Ivo: Running function infinity_cave:abilities/generic/dash]
+[20:33:39] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : uy
+[20:33:44] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : de aqui venia la cosa toxica
+[20:33:54] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : asepta
+[20:33:55] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : tpa
+[20:33:58] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:34:01] [Server thread/INFO]: LApatata_culona issued server command: /tpa Ivo
+[20:34:03] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : manda de vuelta
+[20:34:04] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:34:10] [Server thread/INFO]: LApatata_culona has made the advancement [Infinity Cave]
+[20:34:14] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : pero que mier
+[20:34:17] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : es esto
+[20:34:32] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : ns
+[20:34:41] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : te dieron un libro?
+[20:34:47] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : no
+[20:34:59] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : mucho diamante
+[20:35:00] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : porque ay tantas particulas
+[20:35:09] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : es una zona peligrosa supongo
+[20:35:12] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : es veneno o que
+[20:35:25] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : es venenoso
+[20:35:48] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : mira esto
+[20:35:55] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : es agua
+[20:35:58] [Craft Scheduler Thread - 107 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:36:17] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : aqui a ymas
+[20:36:23] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : eh cierto
+[20:36:35] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : pasame
+[20:36:39] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : que ni tengo pico
+[20:36:41] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : XD
+[20:36:44] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : todavia es mucho
+[20:36:59] [Server thread/INFO]: LApatata_culona has made the advancement [Diamonds!]
+[20:37:01] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : toma la mitad
+[20:37:04] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : para
+[20:37:10] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : tenes amdera
+[20:37:18] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : perdi el hierro
+[20:37:21] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : se me quemo
+[20:37:22] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : XD
+[20:38:12] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : me pregunto si abra algun mob por aca
+[20:38:23] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : ta muy tranquilo todo
+[20:38:24] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : no veo nignuno
+[20:38:41] [Server thread/INFO]: LApatata_culona issued server command: /home list
+[20:38:44] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : f3 + b
+[20:38:46] [Server thread/INFO]: LApatata_culona issued server command: /homes
+[20:38:59] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : pipi no se peude as de un chome
+[20:39:17] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : ala mierda
+[20:39:20] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : que
+[20:39:22] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : mira eso
+[20:39:32] [Server thread/INFO]: Ivo issued server command: /tp LApatata_culona Ivo
+[20:39:35] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : ela gua es venenosa
+[20:39:42] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : ooo
+[20:39:47] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : MAS
+[20:39:57] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : ,e voya vivir aquiw
+[20:40:37] [Server thread/INFO]: LApatata_culona issued server command: /home
+[20:40:45] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : BLDO ES UN MONTON JAJA
+[20:40:58] [Craft Scheduler Thread - 123 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:41:04] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : 64 + 50 ESMERALDAS XD
+[20:41:27] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : nos algas de ay
+[20:42:18] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : 3 STACKS XD
+[20:42:23] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : de que
+[20:42:27] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : ESMERALDA
+[20:42:29] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : XD
+[20:42:36] [Server thread/INFO]: LApatata_culona issued server command: /tpa Ivo
+[20:42:42] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:42:48] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : Ta re roto
+[20:42:50] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : nooo
+[20:42:58] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : los cofres que quedaron aya
+[20:43:18] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : regresa
+[20:43:24] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : ya no peudo
+[20:43:27] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : por
+[20:43:36] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : no tenog home
+[20:43:43] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : te dije que hicieras 1
+[20:43:46] [Server thread/INFO]: Ivo issued server command: /home Hola
+[20:43:52] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : es que solos e puede 1
+[20:43:55] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : ando en tu casa
+[20:44:14] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : serca dea mi casa ay una arbol
+[20:44:15] [Server thread/INFO]: [Ivo: Set own game mode to Spectator Mode]
+[20:44:18] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : ay esta el cofre
+[20:44:25] [Server thread/INFO]: [Ivo: Set own game mode to Survival Mode]
+[20:44:35] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : se quedo bug
+[20:44:39] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : noooa
+[20:44:55] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : manda tpa si queres
+[20:44:57] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : peus madname
+[20:44:58] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : aver si te deja
+[20:45:01] [Server thread/INFO]: LApatata_culona issued server command: /tpa ivo
+[20:45:03] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:45:31] [Server thread/INFO]: Ivo issued server command: /tp LApatata_culona Ivo
+[20:45:51] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : pipi
+[20:45:57] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : aver intenta colocarlo
+[20:45:57] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : que te parese la casa
+[20:45:58] [Craft Scheduler Thread - 145 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:46:00] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : es porvisional
+[20:46:03] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : o toca otro item
+[20:46:27] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : que habia en el cofre
+[20:46:31] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : todo
+[20:46:35] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : pff
+[20:46:56] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : mira
+[20:47:02] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : ya veo
+[20:47:05] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : voy a regresar
+[20:47:06] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : particulas
+[20:47:07] [Server thread/INFO]: Ivo issued server command: /back
+[20:47:09] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : ok
+[20:47:13] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : voy a intentar conseguir algo
+[20:47:26] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  Ivo : un diamante en el agua
+[20:47:35] [ForkJoinPool.commonPool-worker-8/INFO]: (G)  LApatata_culona : uf+
+[20:48:28] [Server thread/INFO]: [Ivo: Set own game mode to Spectator Mode]
+[20:48:46] [Server thread/INFO]: [Ivo: Set own game mode to Survival Mode]
+[20:48:51] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : uh
+[20:48:58] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : que ????
+[20:49:05] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : bloques de slime
+[20:49:10] [Server thread/INFO]: LApatata_culona issued server command: /tpa Ivo
+[20:49:12] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:49:21] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : donde
+[20:49:31] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : me das 3 diamntes
+[20:49:34] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : pa aser un pico
+[20:49:44] [Server thread/INFO]: Ivo has made the advancement [Foul but Fortunate]
+[20:49:48] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : ala que es esto
+[20:49:54] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : lucky carrot
+[20:49:59] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : XD
+[20:50:06] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : zanahoria de la suerte
+[20:50:28] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : tenog un cumblin potation
+[20:50:36] [Server thread/INFO]: Ivo has made the advancement [Cover Me with Diamonds]
+[20:50:38] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : cubringl
+[20:50:41] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : que es eso
+[20:50:44] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : we
+[20:50:48] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : dame 2 diamntes
+[20:50:50] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : 3
+[20:50:54] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : not engo pico
+[20:50:56] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : fueras avisado
+[20:50:58] [Craft Scheduler Thread - 163 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:51:04] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : :V
+[20:51:08] [Server thread/INFO]: Ivo has made the advancement [HAH! TAKE THAT GREEN WATER!]
+[20:51:10] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : tu nunca dijiste
+[20:51:15] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : que s ebugeava asi
+[20:51:27] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : anti greeen water
+[20:51:38] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : interesante
+[20:51:40] [Server thread/INFO]: LApatata_culona has made the advancement [HAH! TAKE THAT GREEN WATER!]
+[20:51:50] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : eso es un anti agua verde
+[20:52:45] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : segun hay bosses
+[20:52:50] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : uf
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-969, y=-115, z=473}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-969, y=-115, z=473}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=498}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=498}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-969, y=-115, z=473}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-969, y=-115, z=473}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=511}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=511}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=498}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:12] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=498}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-902, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-902, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-902, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-902, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-903, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-922, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-941, y=-115, z=517}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-960, y=-115, z=512}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=539}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=539}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-987, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:15] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-987, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:18] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-53, z=-180}
+[20:53:18] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-52, z=-181}
+[20:53:18] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:18] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:18] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:18] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:18] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:18] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:18] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=59, y=-53, z=-181}
+[20:53:18] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=59, y=-53, z=-182}
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=539}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=539}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:19] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : tu tienes mas de un chome
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-53, z=-180}
+[20:53:21] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-52, z=-181}
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-981, y=-115, z=456}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-987, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-987, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1000, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:21] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1000, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1000, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1000, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1013, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1013, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:29] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : tengo 2
+[20:53:31] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-53, z=-180}
+[20:53:31] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-52, z=-181}
+[20:53:31] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1013, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:31] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1013, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:31] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1026, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:31] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1026, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1026, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1026, y=-115, z=521}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:53:34] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : como
+[20:53:44] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : no se
+[20:53:57] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : ah no te menti
+[20:53:59] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : se me borro
+[20:54:00] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : y puedes tepiar a las personas sin tu consentimiento
+[20:54:08] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : :V
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-943, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-943, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-943, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-943, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-979, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:19] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:54:21] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : miraaa
+[20:54:31] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : manda tpa
+[20:54:36] [Server thread/INFO]: LApatata_culona issued server command: /Tpa
+[20:54:38] [Server thread/INFO]: LApatata_culona issued server command: /tpa
+[20:54:41] [Server thread/INFO]: LApatata_culona issued server command: /tpa ivo
+[20:54:44] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[20:54:54] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : ostiad
+[20:55:12] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : ´porque
+[20:55:14] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : que te pasa
+[20:55:21] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : gracias
+[20:55:25] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : porque
+[20:55:31] [Server thread/INFO]: Made Ivo no longer a server operator
+[20:55:33] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  LApatata_culona : iva aser una granja de xp
+[20:55:44] [ForkJoinPool.commonPool-worker-10/INFO]: (G)  Ivo : no funcionaba al parecer
+[20:55:58] [Craft Scheduler Thread - 183 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[20:56:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:24] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1016, y=-115, z=553}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-978, y=-115, z=540}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:35] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-942, y=-115, z=549}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-965, y=-115, z=563}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:38] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-994, y=-115, z=579}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[20:56:51] [ForkJoinPool.commonPool-worker-11/INFO]: (G)  Ivo : esmeralda
+[20:57:24] [ForkJoinPool.commonPool-worker-11/INFO]: (G)  Ivo : mientras mas bajemos mejor
+[20:58:43] [ForkJoinPool.commonPool-worker-12/INFO]: (G)  Ivo : uy
+[20:58:45] [ForkJoinPool.commonPool-worker-12/INFO]: (G)  Ivo : encontre bedrock
+[20:58:50] [ForkJoinPool.commonPool-worker-12/INFO]: (G)  LApatata_culona : tanvien yo
+[20:59:05] [ForkJoinPool.commonPool-worker-12/INFO]: (G)  Ivo : tanto baje?
+[21:00:13] [Server thread/INFO]: LApatata_culona issued server command: /home
+[21:00:44] [ForkJoinPool.commonPool-worker-13/INFO]: (G)  Ivo : pude salir pero ahora es un bioma de terror
+[21:00:52] [ForkJoinPool.commonPool-worker-13/INFO]: (G)  LApatata_culona : XD
+[21:00:54] [ForkJoinPool.commonPool-worker-13/INFO]: (G)  Ivo : yy veo una aldea
+[21:00:58] [Craft Scheduler Thread - 204 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[21:00:58] [ForkJoinPool.commonPool-worker-13/INFO]: (G)  Ivo : veni porfa
+[21:01:06] [Server thread/INFO]: LApatata_culona issued server command: /tpa Ivo
+[21:01:08] [Server thread/INFO]: Ivo issued server command: /huskhomes:tpaccept LApatata_culona
+[21:01:16] [ForkJoinPool.commonPool-worker-13/INFO]: (G)  Ivo : ya no me deja tpearte :(
+[21:01:31] [Server thread/INFO]: LApatata_culona has made the advancement [Is This the Industrial Revolution?]
+[21:01:35] [Server thread/INFO]: Ivo has made the advancement [Is This the Industrial Revolution?]
+[21:01:40] [Server thread/INFO]: LApatata_culona has made the advancement [I Forsee a Great Enchantment...]
+[21:01:54] [ForkJoinPool.commonPool-worker-13/INFO]: (G)  Ivo : robaba todo xD
+[21:02:33] [Server thread/INFO]: Ivo has made the advancement [What a Deal!]
+[21:03:41] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : ta increible todo esto
+[21:03:50] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : la casa de shrek
+[21:03:56] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : XD
+[21:03:58] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : QUEEE
+[21:04:00] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : VENI
+[21:04:06] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : TIENE DIAMANTE
+[21:04:10] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : eee
+[21:05:00] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : mira
+[21:05:11] [Server thread/INFO]: LApatata_culona has made the advancement [Cover Me with Diamonds]
+[21:05:45] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : listo
+[21:05:48] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : full diamante
+[21:05:50] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : madre mia gulil
+[21:05:58] [Craft Scheduler Thread - 223 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[21:06:11] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : todo esto parece preparado xD
+[21:06:19] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : demasiado sierto
+[21:06:21] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : XD
+[21:06:33] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : vamos juntos aver que encontramos
+[21:06:38] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : si
+[21:07:19] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : ostia
+[21:07:23] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : que
+[21:07:27] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : espera
+[21:07:45] [Server thread/INFO]: LApatata_culona has made the advancement [Don't Trip!]
+[21:07:50] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : eh?
+[21:07:55] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : jajjaw
+[21:08:09] [Server thread/INFO]: Ivo issued server command: /tpa LApatata_culona
+[21:08:19] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : espera
+[21:08:26] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : que me meuro
+[21:08:27] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : bueh que abra ahi xD
+[21:08:43] [Server thread/INFO]: Ivo issued server command: /tpa LApatata_culona
+[21:09:19] [Server thread/INFO]: LApatata_culona issued server command: /huskhomes:tpaccept Ivo
+[21:09:22] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : madna deneuvo
+[21:09:25] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : mucho oro
+[21:09:27] [Server thread/INFO]: Ivo issued server command: /tpa LApatata_culona
+[21:09:28] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : si
+[21:09:30] [Server thread/INFO]: LApatata_culona issued server command: /huskhomes:tpaccept Ivo
+[21:09:42] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : y esto?
+[21:09:58] [Server thread/INFO]: Ivo has made the advancement [Don't Trip!]
+[21:10:01] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : ALA
+[21:10:06] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : SHULKER
+[21:10:10] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : eee
+[21:10:11] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : Que xD
+[21:10:36] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : esto no se vale avanzamos re rapido xD
+[21:10:48] [Server thread/INFO]: LApatata_culona has made the advancement [Suit Up]
+[21:10:58] [Craft Scheduler Thread - 243 - nonchat/INFO]: This message is sent every 5 minutes. You can change the interval in the broadcast.example.interval setting.
+[21:11:06] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : viste la torre esa?
+[21:11:09] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : habia shulker
+[21:11:11] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : que torre
+[21:11:13] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : no
+[21:11:29] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : ahi
+[21:11:41] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : :O
+[21:11:42] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : eso estaba
+[21:12:00] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : parese si o si todo preparado XDDDD
+[21:12:10] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : hey pero no esta preparado xD
+[21:12:17] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : pero si lo parese
+[21:12:26] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  LApatata_culona : si fuera un video toods lso comentariso serian eso
+[21:12:35] [ForkJoinPool.commonPool-worker-14/INFO]: (G)  Ivo : seh
+[21:13:31] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-562, y=-115, z=1035}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:31] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-562, y=-115, z=1035}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-562, y=-115, z=1035}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-562, y=-115, z=1035}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:13:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-518, y=-115, z=1016}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-518, y=-115, z=1016}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-518, y=-115, z=1016}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-518, y=-115, z=1016}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-518, y=-115, z=1016}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-518, y=-115, z=1016}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1021}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1021}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-549, y=-115, z=1022}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-536, y=-115, z=1045}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-534, y=-115, z=981}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:28] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=59, y=-53, z=-181}
+[21:14:28] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=59, y=-53, z=-182}
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-967, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-967, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-954, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-980, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-980, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-967, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-967, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-993, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-993, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-980, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:34] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-980, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:39] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-973, y=-115, z=1180}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:45] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:45] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:45] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:45] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:45] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:45] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1110}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1110}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1123}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1123}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1110}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1110}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1155}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1155}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1136}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1008, y=-115, z=1168}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-993, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-993, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:46] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:54] [ForkJoinPool.commonPool-worker-16/INFO]: (G)  Ivo : si encontras algo avisa
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1012, y=-115, z=1205}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:56] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:14:58] [ForkJoinPool.commonPool-worker-16/INFO]: (G)  LApatata_culona : ok
+[21:15:09] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:09] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:09] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:09] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1224}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:09] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1237}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:09] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1237}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:09] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-53, z=-180}
+[21:15:09] [Paper Common Worker #0/ERROR]: Block-attached entity at invalid position: BlockPos{x=78, y=-52, z=-181}
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1141}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1142}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1009, y=-115, z=1177}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1029, y=-115, z=1208}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:10] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1227}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1237}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-999, y=-115, z=1237}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1238}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:11] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1238}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:14] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1025, y=-115, z=1246}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:20] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1238}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:20] [Paper Common Worker #0/ERROR]: Failed to parse jigsaw replacement state 'minecrat:dripstone_block' at BlockPos{x=-1003, y=-115, z=1238}: Unknown block type 'minecrat:dripstone_block' at position 0: <--[HERE]
+[21:15:54] [ForkJoinPool.commonPool-worker-16/INFO]: (G)  LApatata_culona : el vioma tiene lore
+[21:15:55] [ForkJoinPool.commonPool-worker-16/INFO]: (G)  Ivo : aver si encuentro otra cueva

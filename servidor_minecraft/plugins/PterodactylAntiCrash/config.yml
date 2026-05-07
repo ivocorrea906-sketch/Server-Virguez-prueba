@@ -1,0 +1,16 @@
+# -------------------------------------
+#              Settings
+# -------------------------------------
+threshold: 8192 # Maximum RAM in MB before the server restarts.
+apiKey: "ptc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Your personal api key from the pterodactyl api.
+apiUrl: "https://panel.example.com" # The basic url of your panel. ! Important, without a / at the end of the url.
+serverId: "ab1ef655" # The id of this server. The id can be found in thr url after the /server/.
+# -------------------------------------
+#             Messages
+# -------------------------------------
+kickMessage: "&cThe server will restart. Connect again in 3 - 5 minutes." # The message shown to a player when the server restarts.
+restartMinutes: "&cThe server will restart in {0} minutes!" # The countdown Message for the minutes. {0} will be replaced with the minutes.
+restartSeconds: "&cThe server will restart in {0} seconds!" # The countdown Message for the seconds. {0} will be replaced with the seconds.
+restartNow: "&cThe server will restart now." # The countdown messasge after 1 second.
+pteroram: "&aCurrent RAM usage: {0}" # The message for the /pteroram command. {0} will be replaced with the ram usage in mb.
+noPermission: "You don't have the permission to execute this command." # The message for players without the pac.use permission.

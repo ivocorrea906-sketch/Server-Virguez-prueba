@@ -1,0 +1,20 @@
+line1:
+    change-interval: 15000
+    texts:
+        - "&4&lDiscord &r&8| &7Tienda &8| &7Tiktok"
+        - "&7Discord &8| &4&lTienda &r&8| &7Tiktok"
+        - "&7Discord &8| &7Tienda &8| &4&lTikTok&r"
+
+line2:
+    change-interval: 15000
+    texts:
+        - "&fEntra al discord de srvirguez"
+        - "&fProximamente!"
+        - "&fEntra a los lives!"
+
+line3:
+    change-interval: 15000
+    texts:
+        - "&4https://discord.com/invite/fynbYDHeee"
+        - "&4Proximamente..."
+        - "&4_srvirguez_"

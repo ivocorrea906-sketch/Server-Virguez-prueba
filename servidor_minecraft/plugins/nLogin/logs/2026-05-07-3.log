@@ -1,0 +1,19 @@
+[2026/05/07 20:10:47 INFO]:           __             _       
+[2026/05/07 20:10:47 INFO]:   _ __   / /  ___   __ _(_)_ __  
+[2026/05/07 20:10:47 INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[2026/05/07 20:10:47 INFO]:  | | | / /__| (_) | (_| | | | | |
+[2026/05/07 20:10:47 INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
+[2026/05/07 20:10:47 INFO]:                   |___/            
+[2026/05/07 20:10:47 INFO]:  By: www.nickuc.com - V 2.0.16
+[2026/05/07 20:10:47 INFO]:  
+[2026/05/07 20:10:47 DEBUG]: Loading the messages_es.yml message file...
+[2026/05/07 20:10:47 DEBUG]: Messages were loaded in 90 ms (single file).
+[2026/05/07 20:10:47 WARN]: The "unsupported-settings.perform-username-validation" option is enabled in config/paper-global.yml
+[2026/05/07 20:10:47 WARN]: The username-appender feature may fail with an invalid nickname kick message.
+[2026/05/07 20:10:47 DEBUG]: Settings were loaded in 173 ms.
+[2026/05/07 20:10:47 DEBUG]: Loading database...
+[2026/05/07 20:10:47 DEBUG]: Starting logger filter...
+[2026/05/07 20:11:18 DEBUG]: [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'Ivo', `unique_id` = a5a2e13ab5693fa79b5ab3320e4dc96b,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$argon2id$v=19$m=32768,t=5,p=1$1YLIJqwPR0mSgu9sdmjz+g$GrwyX8/L7nMIzdi6YAq03+lEVnYdrL9obE8nhBB7Oeg', `last_ip` = '127.28.237.50', `creation_date` = 2026-05-07 19:39:54.215, `last_seen` = 2026-05-07 20:11:18.609, `email` = null, `discord` = null, `settings` = null WHERE `ai` = 3" (applied to [last_ip, last_seen, settings] columns)
+[2026/05/07 20:11:18 INFO]: The user Ivo has successfully logged in.
+[2026/05/07 20:11:33 DEBUG]: [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'LApatata_culona', `unique_id` = 665f86e684933529b101c958a7062665,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$argon2id$v=19$m=32768,t=5,p=1$c9vbG0flTtfPShaw4pDykA$rtOb1/gvudfRNOmHhLMvv+MuGLT1khkSlV6j+T5/DeE', `last_ip` = '127.160.130.120', `creation_date` = 2026-05-07 19:03:09.521, `last_seen` = 2026-05-07 20:11:33.525, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"es","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_ip, last_seen, settings] columns)
+[2026/05/07 20:11:33 INFO]: The user LApatata_culona has successfully logged in.

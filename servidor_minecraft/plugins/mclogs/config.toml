@@ -1,0 +1,2 @@
+# Base URL for the API used to upload logs
+apiBaseUrl = "https://api.mclo.gs"

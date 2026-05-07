@@ -1,0 +1,67 @@
+# CarryOn Configuration
+# Version: 1.0
+
+# General Settings
+pickup-distance: 2.0
+sneak-to-pickup: true
+blacklisted-worlds:
+  - "example_world_nether"
+
+# Visuelles
+visuals:
+  block-scale: 0.6
+  block-offset-x: -0.3
+  block-offset-y: 0.0
+  block-offset-z: -0.3
+
+# Mob Stacking allows you to carry multiple mobs on top of each other.
+mob-stacking:
+  enabled: true
+
+# Which entities can be picked up?
+allowed-entities:
+  - VILLAGER
+  - COW
+  - SHEEP
+  - PIG
+  - CHICKEN
+  - WOLF
+  - CAT
+  - OCELOT
+  - FOX
+  - HORSE
+  - DONKEY
+  - MULE
+  - LLAMA
+
+# Which blocks can be picked up?
+allowed-blocks:
+  - CHEST
+  - BARREL
+  - ENDER_CHEST
+  - SHULKER_BOX
+  - FURNACE
+  - SMOKER
+  - BLAST_FURNACE
+  - CRAFTING_TABLE
+  - BOOKSHELF
+  - ANVIL
+
+# Sounds (use standard Minecraft sound names)
+sounds:
+  pickup: ENTITY_ITEM_PICKUP
+  place: BLOCK_GRAVEL_PLACE
+  volume: 1.0
+  pitch: 1.0
+
+# Messages (supports color codes like &a, &c, &6 etc.)
+messages:
+  prefix: "&8[&6CarryOn&8] &7"
+  pickup-success: "&aPicked up &e%target%&a."
+  place-success: "&aPlaced &e%target%&a."
+  stack-success: "&aStacked &e%target%&a on top."
+  stack-full: "&cCannot stack more mobs."
+  cannot-carry-stack: "&cYou cannot pick up stacked mobs."
+  reload-success: "&aConfiguration reloaded successfully."
+  no-permission: "&cYou do not have permission to do this."
+  world-blacklisted: "&cYou cannot use CarryOn in this world."

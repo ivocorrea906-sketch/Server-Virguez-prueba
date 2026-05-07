@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:leaf_litter": 1
+    },
+    "minecraft:killed": {
+      "minecraft:wolf": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 764,
+      "minecraft:walk_one_cm": 193,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_taken": 60,
+      "minecraft:play_time": 764,
+      "minecraft:damage_dealt": 40,
+      "minecraft:jump": 30,
+      "minecraft:time_since_death": 764,
+      "minecraft:sprint_one_cm": 2188,
+      "minecraft:fall_one_cm": 450,
+      "minecraft:total_world_time": 764,
+      "minecraft:fly_one_cm": 5769,
+      "minecraft:walk_on_water_one_cm": 435
+    },
+    "minecraft:picked_up": {
+      "minecraft:leaf_litter": 4
+    }
+  },
+  "DataVersion": 4671
+}
